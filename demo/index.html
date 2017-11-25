@@ -20,6 +20,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../paper-button/paper-button.html">
     <link rel="import" href="../paper-swatch-picker.html">
 
     <!-- Ensure Web Animations polyfill is loaded since neon-animation 2.0 doesn't import it -->
@@ -64,6 +65,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </style>
           </custom-style>
           <paper-swatch-picker class="fancy"></paper-swatch-picker>
+        </template>
+      </demo-snippet>
+
+      <h3>You can override the default icon button with any element in the default slot</h3>
+      <demo-snippet class="centered-demo">
+        <template>
+          <paper-swatch-picker>
+            <paper-button raised>Background</paper-button>
+          </paper-swatch-picker>
+          <paper-swatch-picker color="#29b6f6">
+            <paper-button raised>Foreground</paper-button>
+          </paper-swatch-picker>
         </template>
       </demo-snippet>
     </div>
